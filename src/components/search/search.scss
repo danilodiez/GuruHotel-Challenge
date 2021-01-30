@@ -1,6 +1,6 @@
 $button-color: #3E7CB1;
 $radius: 5px;
-
+$heading-color:#F17300;
 
 
 .search-box{
@@ -15,14 +15,21 @@ $radius: 5px;
         width:70%;
         margin-bottom:3%;
         padding-top: 2%;
-        font-size: 13px;
-        background-color: lightgrey;
+        font-size: 15px;
         border-radius: $radius;
+        background: transparent;
         
+        
+        &:focus{
+            background-color: #fff;
+            border:3px solid $heading-color;
+        }
     }
 
     button{
         background-color: $button-color;
+        padding-top: 1%;
+        padding-bottom: 1%;
         color:#fff;
         width: 70%;
         font-size: 20px;

@@ -1,0 +1,20 @@
+
+.card-container{
+    border: 2px solid #3E7CB1;
+    margin-top:10%;
+    width: 95%;
+    border-radius:5px ;
+}
+
+.card-info{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom:10%;
+}
+
+img{
+    margin-left: 10%;
+    border-radius: 10px;
+    width:60%;
+    height:15vh;
+}
