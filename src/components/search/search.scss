@@ -1,16 +1,24 @@
-$button-color: #054A91;
+$button-color: #3E7CB1;
+$radius: 5px;
+
+
 
 .search-box{
-    border: 2px solid black;
+    
     width: 100%;
     text-align: center;
     justify-content: center;
-    padding-top:10%;
+    padding-top:5%;
 
     .search-input{
+        font-family: 'Poppins', sans-serif;
         width:70%;
         margin-bottom:3%;
-        font-size: 20px;
+        padding-top: 2%;
+        font-size: 13px;
+        background-color: lightgrey;
+        border-radius: $radius;
+        
     }
 
     button{
@@ -18,5 +26,6 @@ $button-color: #054A91;
         color:#fff;
         width: 70%;
         font-size: 20px;
+        border-radius: $radius;
     }
 }

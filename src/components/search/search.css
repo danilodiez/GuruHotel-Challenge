@@ -1,23 +1,27 @@
 .search-box {
-  border: 2px solid black;
   width: 100%;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 .search-box .search-input {
+  font-family: 'Poppins', sans-serif;
   width: 70%;
   margin-bottom: 3%;
-  font-size: 20px;
+  padding-top: 2%;
+  font-size: 13px;
+  background-color: lightgrey;
+  border-radius: 5px;
 }
 
 .search-box button {
-  background-color: #054A91;
+  background-color: #3E7CB1;
   color: #fff;
   width: 70%;
   font-size: 20px;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=search.css.map */
