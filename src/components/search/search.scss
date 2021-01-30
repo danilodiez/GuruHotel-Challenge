@@ -1,0 +1,22 @@
+$button-color: #054A91;
+
+.search-box{
+    border: 2px solid black;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-top:10%;
+
+    .search-input{
+        width:70%;
+        margin-bottom:3%;
+        font-size: 20px;
+    }
+
+    button{
+        background-color: $button-color;
+        color:#fff;
+        width: 70%;
+        font-size: 20px;
+    }
+}

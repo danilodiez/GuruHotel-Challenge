@@ -1,0 +1,23 @@
+.search-box {
+  border: 2px solid black;
+  width: 100%;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10%;
+}
+
+.search-box .search-input {
+  width: 70%;
+  margin-bottom: 3%;
+  font-size: 20px;
+}
+
+.search-box button {
+  background-color: #054A91;
+  color: #fff;
+  width: 70%;
+  font-size: 20px;
+}
+/*# sourceMappingURL=search.css.map */

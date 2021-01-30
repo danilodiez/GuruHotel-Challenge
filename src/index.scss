@@ -1,13 +1,11 @@
 $background-primary: #DBE4EE;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
 
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $background-primary;
