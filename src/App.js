@@ -1,27 +1,24 @@
 
 import Header from './components/header/Header';
 import SearchBox from './components/search/Search';
-import Card from './components/cards/Card';
+import CardList from './components/cardList/CardList';
 
 
-function App() {
-  var rows = [];
-  for (var i = 0; i < 10; i++) {
-    // note: we are adding a key prop here to allow react to uniquely identify each
-    // element in this array. see: https://reactjs.org/docs/lists-and-keys.html
-    rows.push(<Card key={i} />);
-}
+
+function App() {  
   
-  return (
+  return(
     <div className="App">
       
         <Header/>
         <SearchBox/>
         
-        {rows}
+        <CardList/>
         
     </div>
   );
+
+
 }
 
 export default App;

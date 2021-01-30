@@ -24,24 +24,28 @@ const Card = () => {
             </h2>
             <div className="card-info">
                 
-                <img src={pizzaImg} />
+                <img src={pizzaImg} className="card-img"/>
                 
-                <div>
+                <div className="card-text">
 
-                    <p>
+                    
                         ⭐⭐⭐⭐
                         <br/>
-                        {ubicacion}
+                        
+                        📍 {ubicacion}
                         
                         
                         <br/>
                         Vistas: {vistas} 
                         <br/>
                         {telefono}
-                    </p>
+                    
                 </div>
-                {vista?<>👁️</>:<></>}
+                {/*Aca disponemos si la tienda ya fue seleccionada*/}
                 
+            </div>
+            <div className="view-already">
+                {vista?<>👁️</>:<></>}
             </div>
         </div>
      );
