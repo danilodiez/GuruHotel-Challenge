@@ -73,7 +73,7 @@ function fetchProducts(name, ubication) {
                 
             })
             .catch(err=>{
-                dispatch(fetchStoreFailure);
+                dispatch(fetchStoreFailure(err));
             })
 
             }

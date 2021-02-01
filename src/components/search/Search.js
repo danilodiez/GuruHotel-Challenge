@@ -9,10 +9,8 @@ const SearchBox = () => {
     const [store, setStore] = useState('');
     const [ubication, setUbication] = useState('');   
 
-    
-    console.log(store)
-    console.log(ubication)
     const dispatch = useDispatch()
+    
     function search(store, ubication){
         
         if(store!=="" && ubication!==""){

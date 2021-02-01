@@ -1,14 +1,20 @@
 import Card from '../cards/Card';
 import './card-list.css';
 import {useSelector} from 'react-redux';
-
+import {useState, useEffect} from 'react'
 
 const CardList = () => {
     var rows = [];
-    const datos= useSelector(state => state)   
-    for (var i = 0; i < 10; i++) {
-        rows.push(<Card key={i} />);
-    }
+    const datos= useSelector(state => state.stores)   
+    
+    useEffect( () => {
+      if (datos.hasOwnProperty('search')){
+      console.log("soy un debugger")
+      datos.stores.search.business.map((store, key)=>{
+        rows.push(<Card  />)
+      })
+    }},[])
+    
     
     console.log(datos)
   
