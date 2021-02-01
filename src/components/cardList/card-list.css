@@ -1,4 +1,13 @@
 h2 {
   margin-top: 10%;
 }
+
+.cards-list {
+  width: 100%;
+  text-align: center;
+}
+
+.loading-gif {
+  width: 20%;
+}
 /*# sourceMappingURL=card-list.css.map */

@@ -1,56 +1,56 @@
 
 import './card.css';
 import pizzaImg from './pizza.jpg';
+import Detail from '../detail/Detail'
 
 
+const Card = (storesData) => {
+    let info = storesData
+    const {hours,id,is_closed,location,name,phone,price,rating,review_count,reviews,url,photos} = info.storesData;
+    let detailFlag=false;
+    
+    let detailComponent=<Detail storeInfo={info.storesData}/>
 
-const Card = () => {
-    let info = {
-        nombre: "Las pizzas rusticas",
-        ubicacion: "Saladas, Corrientes",
-        puntuacion:5,
-        vistas:1000,
-        telefono:54375231351,
-        vista:true
-
+    function showDetails(){
+        return !detailFlag
     }
 
-    const {nombre, ubicacion, puntuacion, vistas, telefono, vista} = info
-    
+    let vista=false;
     return ( 
         <div className="card-container">
             <h2>
-                {nombre}
+                {name}
             </h2>
             <div className="card-info">
                 
-                <img src={pizzaImg} className="card-img"/>
+                <img src={photos[0]} className="card-img"/>
                 
                 <div className="card-text">
 
                     
-                        ⭐⭐⭐⭐
+                        Rating: {rating} stars
                         <br/>
                         
-                        📍 {ubicacion}
+                        📍 {location.address1}, {location.city}
                         
                         
                         <br/>
-                        Vistas: {vistas} 
+                        Views: {review_count} 
                         <br/>
-                        {telefono}
+                        Tel: {phone}
                     
                 </div>
                 {/*Aca disponemos si la tienda ya fue seleccionada*/}
                 
             </div>
-            <button>
-                Ver más
+            <button onClick={showDetails()}>
+                Ver {detailFlag?<>más</>:<>menos</>}
             </button>
 
             <div className="view-already">
                 {vista?<>👁️</>:<></>}
             </div>
+            {detailFlag?detailComponent:<></>}
         </div>
      );
 }

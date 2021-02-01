@@ -12,7 +12,7 @@ const SearchBox = () => {
     const dispatch = useDispatch()
     
     function search(store, ubication){
-        
+       
         if(store!=="" && ubication!==""){
             dispatch(fetchStores(store, ubication))
             
@@ -27,7 +27,7 @@ const SearchBox = () => {
         <input id="ubication" className="search-input" placeholder="🌎 Dónde estás?" onChange={event => setUbication(event.target.value)}>
         </input>
         <button>
-        <b id="searchButton" onClick={()=>{search()}}>Buscar </b>
+        <b id="searchButton" onClick={()=>{search(store, ubication)}}>Buscar </b>
         </button>
 
     </div> );

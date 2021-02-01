@@ -2,26 +2,32 @@ import Card from '../cards/Card';
 import './card-list.css';
 import {useSelector} from 'react-redux';
 import {useState, useEffect} from 'react'
+import LoadingGif from './loading.gif'
 
 const CardList = () => {
     var rows = [];
     const datos= useSelector(state => state.stores)   
-    
-    useEffect( () => {
-      if (datos.hasOwnProperty('search')){
-      console.log("soy un debugger")
-      datos.stores.search.business.map((store, key)=>{
-        rows.push(<Card  />)
-      })
-    }},[])
+    const [storesData, setStoreData] = useState([])
     
     
-    console.log(datos)
-  
+    useEffect(() => {
+      
+      if(datos.stores.hasOwnProperty('data')){
+        
+        setStoreData(datos.stores.data.search.business)
+      
+      }
+    }, [datos]);
+    rows = storesData.map((item, i)=><Card key={i} storesData={item}/>)
+
+    
   return ( 
-      <div>
+      <div className="cards-list">
         <h2>Resultados</h2>
-        {rows}
+        {datos.loading?<img className="loading-gif" src={LoadingGif} alt="Loading image" />:<>{rows}</>}
+        
+        
+        
         </div>
      )
 }
