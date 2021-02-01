@@ -13,13 +13,14 @@
   margin-bottom: 3%;
   padding-top: 2%;
   font-size: 15px;
-  border-radius: 5px;
+  border-radius: 32px;
   background: transparent;
+  padding-left: 2%;
 }
 
 .search-box .search-input:focus {
   background-color: #fff;
-  border: 3px solid #F17300;
+  border: 3px solid #054a91;
 }
 
 .search-box button {
@@ -27,8 +28,9 @@
   padding-top: 1%;
   padding-bottom: 1%;
   color: #fff;
-  width: 70%;
+  width: 40%;
+  height: 6vh;
   font-size: 20px;
-  border-radius: 5px;
+  border-radius: 32px;
 }
 /*# sourceMappingURL=search.css.map */

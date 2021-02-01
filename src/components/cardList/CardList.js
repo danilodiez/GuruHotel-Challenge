@@ -1,5 +1,5 @@
 import Card from '../cards/Card'
-
+import './card-list.css'
 
 const CardList = () => {
     var rows = [];
@@ -12,6 +12,7 @@ const CardList = () => {
   
   return ( 
       <div>
+        <h2>Resultados</h2>
         {rows}
         </div>
      )

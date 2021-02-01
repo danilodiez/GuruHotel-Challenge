@@ -44,6 +44,10 @@ const Card = () => {
                 {/*Aca disponemos si la tienda ya fue seleccionada*/}
                 
             </div>
+            <button>
+                Ver más
+            </button>
+
             <div className="view-already">
                 {vista?<>👁️</>:<></>}
             </div>

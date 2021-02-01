@@ -1,6 +1,6 @@
-$button-color: #3E7CB1;
-$radius: 5px;
-$heading-color:#F17300;
+$secondary-color: #054a91;
+$radius: 32px;
+$accent-color:#F17300;
 
 
 .search-box{
@@ -18,20 +18,23 @@ $heading-color:#F17300;
         font-size: 15px;
         border-radius: $radius;
         background: transparent;
+        padding-left: 2%;
         
         
         &:focus{
             background-color: #fff;
-            border:3px solid $heading-color;
+            border:3px solid $secondary-color;
+            
         }
     }
 
     button{
-        background-color: $button-color;
+        background-color: #3E7CB1;
         padding-top: 1%;
         padding-bottom: 1%;
         color:#fff;
-        width: 70%;
+        width: 40%;
+        height: 6vh;
         font-size: 20px;
         border-radius: $radius;
     }

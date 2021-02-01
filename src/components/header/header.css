@@ -3,6 +3,9 @@
   text-align: center;
   padding-top: 2%;
   margin-top: 20%;
+  border-bottom: 5px solid #3E7CB1;
+  border-top: 5px solid #3E7CB1;
+  border-radius: 20px;
 }
 
 h1 {
