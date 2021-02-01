@@ -1,62 +1,32 @@
 import './search.css'
-import {useEffect} from 'react'
-
-
+import {useEffect, useState} from 'react'
+import fetchStores from '../../scripts/fetchStores'
+import {useDispatch} from 'react-redux'
 
 
 const SearchBox = () => {
-    let data = `
-    {
-        search(term: "burrito",
-                location: "san francisco",
-                limit: 5) {
-            total
-            business {
-                name
-                url
-            }
+    
+    const [store, setStore] = useState('');
+    const [ubication, setUbication] = useState('');   
+
+    
+    console.log(store)
+    console.log(ubication)
+    const dispatch = useDispatch()
+    function search(store, ubication){
+        
+        if(store!=="" && ubication!==""){
+            dispatch(fetchStores(store, ubication))
+            
         }
     }
-    
-        
-        `
-
-
-    function search(){
-        console.log("3")
-        fetch("https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/graphql", {
-            method:"POST",
-            headers:{ 
-                "Content-Type":"application/graphql",
-                "Accept-Language": "en_US",
-                "x-requested-with":"xmlhttprequest",
-                
-                Authorization: "Bearer Cdvlt-2usVM10kSRof4TzepoMcO84bSaJMpG53pk7qIxVhK1fisXn5GLmRsOcleJl3ekWbqh-8_RyKbbDm2phDlGCQ-9vmz7fXITpOkl9iIblxkhaSIwECo1aJAUYHYx"
-                 
-                
-            },
-
-            body:data
-    
-
-        }).then(res=>res.json())
-        .then(data=>{
-            console.log(data)
-        })
-        .catch(err=>console.log(err))
-        }
-
-   
-  
-
-
-
 
 
     return ( <div className="search-box">
-        <input id="store-name" className="search-input" placeholder="🔎 Qué estás buscando?">
+        <input id="store-name" className="search-input" placeholder="🔎 Qué estás buscando?"
+        onChange={event => setStore(event.target.value)}>
         </input>
-        <input id="ubication" className="search-input" placeholder="🌎 Dónde estás?">
+        <input id="ubication" className="search-input" placeholder="🌎 Dónde estás?" onChange={event => setUbication(event.target.value)}>
         </input>
         <button>
         <b id="searchButton" onClick={()=>{search()}}>Buscar </b>
