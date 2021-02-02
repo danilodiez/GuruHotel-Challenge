@@ -2,17 +2,19 @@
 import './card.css';
 import pizzaImg from './pizza.jpg';
 import Detail from '../detail/Detail'
-
+import {useState} from 'react'
 
 const Card = (storesData) => {
     let info = storesData
-    const {hours,id,is_closed,location,name,phone,price,rating,review_count,reviews,url,photos} = info.storesData;
-    let detailFlag=false;
-    
-    let detailComponent=<Detail storeInfo={info.storesData}/>
+    const {location,name,phone,rating,review_count,photos, ...details} = info.storesData;
+
+    const [detailFlag, setDetailFlag] = useState(false)
+    let detailComponent=<Detail storeDetails={details}/>
 
     function showDetails(){
-        return !detailFlag
+        console.log("holi")
+        setDetailFlag(!detailFlag)
+        
     }
 
     let vista=false;
@@ -43,8 +45,8 @@ const Card = (storesData) => {
                 {/*Aca disponemos si la tienda ya fue seleccionada*/}
                 
             </div>
-            <button onClick={showDetails()}>
-                Ver {detailFlag?<>más</>:<>menos</>}
+            <button onClick={e=>showDetails()}>
+                Ver {detailFlag?<>menos</>:<>mas</>}
             </button>
 
             <div className="view-already">
