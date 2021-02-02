@@ -26,6 +26,7 @@ $accent-color:#F17300;
             border:3px solid $secondary-color;
             
         }
+        
     }
 
     button{
@@ -37,5 +38,8 @@ $accent-color:#F17300;
         height: 6vh;
         font-size: 20px;
         border-radius: $radius;
+        &:hover{
+            cursor: pointer;
+        }
     }
 }

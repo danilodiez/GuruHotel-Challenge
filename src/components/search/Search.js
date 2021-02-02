@@ -1,5 +1,5 @@
 import './search.css'
-import {useEffect, useState} from 'react'
+import {useState} from 'react'
 import fetchStores from '../../scripts/fetchStores'
 import {useDispatch} from 'react-redux'
 
@@ -21,13 +21,13 @@ const SearchBox = () => {
 
 
     return ( <div className="search-box">
-        <input id="store-name" className="search-input" placeholder="🔎 Qué estás buscando?"
+        <input id="store-name" className="search-input" placeholder="🔎 pizza, tacos, delivery..."
         onChange={event => setStore(event.target.value)}>
         </input>
-        <input id="ubication" className="search-input" placeholder="🌎 Dónde estás?" onChange={event => setUbication(event.target.value)}>
+        <input id="ubication" className="search-input" placeholder="🌎 Where?" onChange={event => setUbication(event.target.value)}>
         </input>
         <button>
-        <b id="searchButton" onClick={()=>{search(store, ubication)}}>Buscar </b>
+        <b id="searchButton" onClick={()=>{search(store, ubication)}}>Search </b>
         </button>
 
     </div> );

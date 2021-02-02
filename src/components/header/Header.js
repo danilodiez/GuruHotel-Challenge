@@ -10,7 +10,7 @@ const Header = () => {
         🛒 Store Finder
         </h1>
         <h3>
-            Encontrá la tienda que necesites en el lugar donde estés
+            Find what you need wherever you are
         </h3>
         </div>
      );

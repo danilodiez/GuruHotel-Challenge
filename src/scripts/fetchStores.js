@@ -11,7 +11,6 @@ function fetchProducts(name, ubication) {
                 business {
                     id
                     name
-                    url
                     is_closed
                     phone
                     review_count

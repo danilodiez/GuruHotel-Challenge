@@ -1,6 +1,6 @@
 
 import './card.css';
-import pizzaImg from './pizza.jpg';
+
 import Detail from '../detail/Detail'
 import {useState} from 'react'
 
@@ -12,7 +12,7 @@ const Card = (storesData) => {
     let detailComponent=<Detail storeDetails={details}/>
 
     function showDetails(){
-        console.log("holi")
+        
         setDetailFlag(!detailFlag)
         
     }
@@ -25,7 +25,7 @@ const Card = (storesData) => {
             </h2>
             <div className="card-info">
                 
-                <img src={photos[0]} className="card-img"/>
+                <img src={photos[0]} className="card-img" alt="restaurant"/>
                 
                 <div className="card-text">
 
@@ -39,20 +39,21 @@ const Card = (storesData) => {
                         <br/>
                         Views: {review_count} 
                         <br/>
-                        Tel: {phone}
+                        Tel: {phone?phone:<>Unavailable</>}
                     
                 </div>
                 {/*Aca disponemos si la tienda ya fue seleccionada*/}
                 
             </div>
+            {detailFlag?detailComponent:<></>}
             <button onClick={e=>showDetails()}>
-                Ver {detailFlag?<>menos</>:<>mas</>}
+                 {detailFlag?<>Hide</>:<>Show details</>}
             </button>
 
             <div className="view-already">
                 {vista?<>👁️</>:<></>}
             </div>
-            {detailFlag?detailComponent:<></>}
+            
         </div>
      );
 }

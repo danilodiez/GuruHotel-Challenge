@@ -23,8 +23,8 @@ const CardList = () => {
     
   return ( 
       <div className="cards-list">
-        <h2>Resultados</h2>
-        {datos.loading?<img className="loading-gif" src={LoadingGif} alt="Loading image" />:<>{rows}</>}
+        <h2>Best Results</h2>
+        {datos.loading?<img className="loading-gif" src={LoadingGif} alt="Loading" />:<>{rows}</>}
         
         
         

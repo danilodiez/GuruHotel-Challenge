@@ -33,4 +33,8 @@
   font-size: 20px;
   border-radius: 32px;
 }
+
+.search-box button:hover {
+  cursor: pointer;
+}
 /*# sourceMappingURL=search.css.map */
