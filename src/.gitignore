@@ -1,2 +1,2 @@
 node_modules/
-/src/scripts/secrets.js
+src/scripts/secrets.js
