@@ -11,7 +11,8 @@ Tecnologia usada:
 La aplicacion se preparo para producción con ```$yarn build``` y se hizo el deploy para su utilizacón a Netlify:
     https://cocky-joliot-1847ed.netlify.app/
     
-    [Aclaracion]: La API de Yelp ofrece limitaciones en cuanto a su consumo, es por esto que quizas en el funcionamiento se muestre el mensaje de error ante las busquedas
+Aclaración: La API de Yelp ofrece limitaciones en cuanto a su consumo, es por esto que quizas en el funcionamiento se muestre el mensaje de error ante las búsquedas. 
+
 # Iniciando el proyecto
 Primero tenemos que clonar el proyecto
 ```sh
