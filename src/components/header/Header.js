@@ -4,7 +4,7 @@ import './header.css'
 
 const Header = () => {
     return ( 
-        <div className="title-container">
+        <div className="title-box">
         
         <h1>
         🛒 Store Finder

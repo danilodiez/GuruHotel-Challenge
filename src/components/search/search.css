@@ -13,14 +13,9 @@
   margin-bottom: 3%;
   padding-top: 2%;
   font-size: 15px;
-  border-radius: 32px;
+  border-radius: 10px;
   background: transparent;
   padding-left: 2%;
-}
-
-.search-box .search-input:focus {
-  background-color: #fff;
-  border: 3px solid #054a91;
 }
 
 .search-box button {
@@ -31,7 +26,7 @@
   width: 40%;
   height: 6vh;
   font-size: 20px;
-  border-radius: 32px;
+  border-radius: 10px;
 }
 
 .search-box button:hover {

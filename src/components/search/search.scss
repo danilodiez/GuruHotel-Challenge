@@ -1,5 +1,5 @@
 $secondary-color: #054a91;
-$radius: 32px;
+$radius: 10px;
 $accent-color:#F17300;
 
 
@@ -19,13 +19,6 @@ $accent-color:#F17300;
         border-radius: $radius;
         background: transparent;
         padding-left: 2%;
-        
-        
-        &:focus{
-            background-color: #fff;
-            border:3px solid $secondary-color;
-            
-        }
         
     }
 

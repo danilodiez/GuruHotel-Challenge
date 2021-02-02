@@ -22,12 +22,12 @@ const SearchBox = () => {
 
     return ( <div className="search-box">
         <input id="store-name" className="search-input" placeholder="🔎 pizza, tacos, delivery..."
-        onChange={event => setStore(event.target.value)}>
+        autoComplete="off" onChange={event => setStore(event.target.value)}>
         </input>
-        <input id="ubication" className="search-input" placeholder="🌎 Where?" onChange={event => setUbication(event.target.value)}>
+        <input id="ubication" className="search-input" placeholder="🌎 Where?" autoComplete="off" onChange={event => setUbication(event.target.value)}>
         </input>
-        <button>
-        <b id="searchButton" onClick={()=>{search(store, ubication)}}>Search </b>
+        <button id="searchButton" onClick={()=>{search(store, ubication)}}>
+         <b>Search </b>
         </button>
 
     </div> );

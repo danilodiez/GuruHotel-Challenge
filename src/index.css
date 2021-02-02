@@ -10,4 +10,43 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+@media screen and (min-width: 1000px) {
+  .App {
+    font-size: 28px;
+  }
+  .App .title-box {
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 2%;
+  }
+  .App .title-box h1 {
+    font-size: 60px;
+  }
+  .App .search-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .App .search-box input {
+    font-size: 22px;
+  }
+  .App .cards-list h2 {
+    margin-top: 4%;
+    color: white;
+  }
+  .App .cards-list .loading-gif {
+    width: 5%;
+  }
+  .App .card-container {
+    width: 30%;
+    font-size: 22px;
+    margin-bottom: 5%;
+  }
+  .App .card-container:hover {
+    width: 32%;
+  }
+}
 /*# sourceMappingURL=index.css.map */
