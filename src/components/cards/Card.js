@@ -29,7 +29,8 @@ const Card = (storesData) => {
                 <div className="card-text">
 
                     
-                        Rating: {rating} stars
+                        
+                        ⭐ {rating} 
                         <br/>
                         
                         📍 {location.address1}, {location.city}
