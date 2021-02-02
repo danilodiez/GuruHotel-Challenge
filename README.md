@@ -5,7 +5,7 @@ Desafio realizado para GuruHotel, consistente de crear una SPA que consuma datos
 Tecnologia usada:
   - ReactJs
   - Yelp GraphQL API
-  - Html + Css + Js
+  - Sass
   - GitHub
 # Deployment
 La aplicacion se preparo para producción con ```$yarn build``` y se hizo el deploy para su utilizacón a Netlify:
