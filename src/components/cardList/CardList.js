@@ -9,6 +9,7 @@ const CardList = () => {
     const datos= useSelector(state => state.stores);   
     const [storesData, setStoreData] = useState([]);
     
+    console.log(datos)
     
     useEffect(() => {
       
@@ -25,7 +26,9 @@ const CardList = () => {
       <div className="cards-list">
         <h2>Best Results</h2>
         {datos.loading?<img className="loading-gif" src={LoadingGif} alt="Loading" />:<>{rows}</>}
-        
+        {datos.error?<h4>
+❌An error with the stores database has ocurred
+❌</h4>:<></>}
         
         
         </div>
