@@ -1,5 +1,7 @@
 import {fetchStoreBegin, fetchStoreSuccess, fetchStoreFailure} from '../actions/actions';
-import {APIKey} from './secrets'
+import {APIKey} from './secrets';
+
+
 function fetchProducts(name, ubication) {
     return dispatch => {
         dispatch(fetchStoreBegin());

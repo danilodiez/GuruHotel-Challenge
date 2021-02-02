@@ -6,19 +6,19 @@ import LoadingGif from './loading.gif'
 
 const CardList = () => {
     var rows = [];
-    const datos= useSelector(state => state.stores)   
-    const [storesData, setStoreData] = useState([])
+    const datos= useSelector(state => state.stores);   
+    const [storesData, setStoreData] = useState([]);
     
     
     useEffect(() => {
       
       if(datos.stores.hasOwnProperty('data')){
         
-        setStoreData(datos.stores.data.search.business)
+        setStoreData(datos.stores.data.search.business);
       
       }
     }, [datos]);
-    rows = storesData.map((item, i)=><Card key={i} storesData={item}/>)
+    rows = storesData.map((item, i)=><Card key={i} storesData={item}/>);
 
     
   return ( 

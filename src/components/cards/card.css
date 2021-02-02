@@ -24,11 +24,6 @@
   padding-bottom: 10%;
 }
 
-.card-container .view-already {
-  opacity: 0.5;
-  text-align: right;
-}
-
 .card-container .card-img {
   width: 100%;
   border-radius: 10px;

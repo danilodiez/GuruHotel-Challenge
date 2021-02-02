@@ -1,7 +1,7 @@
 $secondary-color: #054a91;
 $radius: 10px;
 $accent-color:#F17300;
-
+$primary-color:#3E7CB1;
 
 .search-box{
     
@@ -23,7 +23,7 @@ $accent-color:#F17300;
     }
 
     button{
-        background-color: #3E7CB1;
+        background-color: $primary-color;
         padding-top: 1%;
         padding-bottom: 1%;
         color:#fff;

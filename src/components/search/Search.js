@@ -1,7 +1,7 @@
-import './search.css'
-import {useState} from 'react'
-import fetchStores from '../../scripts/fetchStores'
-import {useDispatch} from 'react-redux'
+import './search.css';
+import {useState} from 'react';
+import fetchStores from '../../scripts/fetchStores';
+import {useDispatch} from 'react-redux';
 
 
 const SearchBox = () => {
@@ -9,12 +9,12 @@ const SearchBox = () => {
     const [store, setStore] = useState('');
     const [ubication, setUbication] = useState('');   
 
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
     
     function search(store, ubication){
        
         if(store!=="" && ubication!==""){
-            dispatch(fetchStores(store, ubication))
+            dispatch(fetchStores(store, ubication));
             
         }
     }

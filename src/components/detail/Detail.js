@@ -1,17 +1,17 @@
-import './detail.css'
+import './detail.css';
 
 const parseHours = (text)=>{
     //Con este metodo agrego ":" a las horas
-    let position = text.length-2
+    let position = text.length-2;
     let output = [text.slice(0, position), ":", text.slice(position)].join('');
     return output
 }
 
 
 const Detail = (storeDetail) => {
-    const {hours,id,is_closed,price,reviews,url} = storeDetail.storeDetails
+    const {hours,id,is_closed,price,reviews,url} = storeDetail.storeDetails;
     /*Para el parseo de los dias desde la Api uso un arreglo en el que el indice corresponde a cada dia de la semana*/
-    let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
 
      /*
@@ -29,12 +29,12 @@ const Detail = (storeDetail) => {
             <br/>
             </div>
         })}
-    </div>
+    </div>;
     
         /*
         DIV de los horarios de atencion
         */ 
-    let attentionHours=<div>
+    let attentionHours = <div>
         {hours[0].open.map((attentionItem, key)=>{
             return <p key={key}>
             {days[attentionItem.day]}: {parseHours(attentionItem.start)} - {parseHours(attentionItem.end)} <br/>
