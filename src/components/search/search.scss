@@ -33,6 +33,8 @@ $accent-color:#F17300;
         border-radius: $radius;
         &:hover{
             cursor: pointer;
+            background-color: $secondary-color;
+            transition:  0.3s ease-out all;
         }
     }
 }

@@ -1,5 +1,5 @@
 import {fetchStoreBegin, fetchStoreSuccess, fetchStoreFailure} from '../actions/actions';
-
+import {APIKey} from './secrets'
 function fetchProducts(name, ubication) {
     return dispatch => {
         dispatch(fetchStoreBegin());
@@ -52,7 +52,7 @@ function fetchProducts(name, ubication) {
                     "Accept-Language": "en_US",
                     "x-requested-with":"xmlhttprequest",
                     
-                    Authorization: "Bearer Cdvlt-2usVM10kSRof4TzepoMcO84bSaJMpG53pk7qIxVhK1fisXn5GLmRsOcleJl3ekWbqh-8_RyKbbDm2phDlGCQ-9vmz7fXITpOkl9iIblxkhaSIwECo1aJAUYHYx"
+                    Authorization: `Bearer ${APIKey}` 
                      
                     
                 },

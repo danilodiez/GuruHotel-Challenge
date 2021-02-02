@@ -31,5 +31,8 @@
 
 .search-box button:hover {
   cursor: pointer;
+  background-color: #054a91;
+  -webkit-transition: 0.3s ease-out all;
+  transition: 0.3s ease-out all;
 }
 /*# sourceMappingURL=search.css.map */
