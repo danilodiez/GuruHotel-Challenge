@@ -11,7 +11,6 @@ function fetchProducts(name, ubication) {
                     location: "${ubication}",
                     limit: 10) {
                 business {
-                    id
                     name
                     is_closed
                     phone

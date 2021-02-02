@@ -9,7 +9,7 @@ const parseHours = (text)=>{
 
 
 const Detail = (storeDetail) => {
-    const {hours,id,is_closed,price,reviews,url} = storeDetail.storeDetails;
+    const {hours,is_closed,price,reviews} = storeDetail.storeDetails;
     /*Para el parseo de los dias desde la Api uso un arreglo en el que el indice corresponde a cada dia de la semana*/
     let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
